@@ -172,20 +172,9 @@
     "country": "Deutschland",
     "phone": "01709669888",
     "email": "ZWIRNER.IT@GMX.DE",
-    "vatId": "USt. ID: DE461822701 ",
-    "additionalInfo": "[GEGEBENENFALLS BERUFSRECHTLICHE, AUFSICHTS- ODER REGISTERANGABEN ERGÄNZEN]",
-    "contentResponsible": "MICHAEL ZWIRNER",
-    "responsibleAddress": "34414 WARBURG"
+    "vatId": "USt. ID: DE461822701 "
   },
   "privacy": {
-    "intro": "Diese Seite bildet eine datenschutzfreundliche Grundstruktur. Sie muss vor Veröffentlichung anhand der tatsächlich eingesetzten Dienste und Prozesse vervollständigt und rechtlich geprüft werden.",
-    "controller": "SYSTEMTECHNIK ZWIRNER\nMICHAEL ZWIRNER\nZWIRNER.IT@GMX.DE\n",
-    "hosting": "[HOSTING-ANBIETER, SERVERSTANDORT, VERARBEITETE LOGDATEN, RECHTSGRUNDLAGE UND SPEICHERDAUER ERGÄNZEN]",
-    "contactText": "Wenn Sie mit uns Kontakt aufnehmen, werden Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.",
-    "contactDetails": "[RECHTSGRUNDLAGE, SPEICHERDAUER UND KONKRETE VERARBEITUNGSWEGE DES KONTAKTFORMULARS ERGÄNZEN]",
-    "cookiesText": "In dieser Website-Version sind keine Analyse-, Werbe- oder Trackingdienste vorgesehen. Es werden keine externen Webfonts geladen.",
-    "cookiesDetails": "[BEI SPÄTEREN ÄNDERUNGEN PRÜFEN UND DIESEN ABSCHNITT SOWIE EIN ETWAIGES EINWILLIGUNGSMANAGEMENT ANPASSEN]",
-    "rights": "[BETROFFENENRECHTE, ZUSTÄNDIGE AUFSICHTSBEHÖRDE UND KONTAKTWEGE RECHTLICH GEPRÜFT ERGÄNZEN]",
-    "updated": "Stand: [MONAT JAHR]. Diese Datenschutzerklärung ist bei Änderungen der Website oder eingesetzter Dienste zu aktualisieren."
+    "controller": "SYSTEMTECHNIK ZWIRNER\nMICHAEL ZWIRNER\nZWIRNER.IT@GMX.DE\n"
   }
 }
