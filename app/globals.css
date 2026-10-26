@@ -148,3 +148,15 @@ h2{font-size:clamp(40px,4.7vw,70px)}
   .footer__links>div:last-child{grid-column:auto}
 }
 
+/* Kontrastsichere helle Bereiche – auch bei erzwungenem Dark Mode auf Mobilbrowsern. */
+.services,.about{background-color:#f0f1f0;color:#0a0c0e}
+.services .section-head>p,.services .service-card p,.services .service-details ul{color:#4d565b}
+.services h2,.services h3,.services summary,.about h2,.about h3,.about .principles span{color:#0a0c0e}
+.about__copy>p{color:#4d565b}
+.about__copy .lead{color:#111517}
+
+@media(max-width:560px){
+  .services,.about{-webkit-text-fill-color:currentColor}
+  .services .service-card{background:#f0f1f0;color:#0a0c0e}
+  .services .service-card:hover{background:#f8f9f8}
+}
