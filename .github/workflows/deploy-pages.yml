@@ -1,0 +1,54 @@
+name: Website veröffentlichen
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Quellcode laden
+        uses: actions/checkout@v6
+
+      - name: pnpm einrichten
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Abhängigkeiten installieren
+        run: pnpm install --frozen-lockfile
+
+      - name: Website erstellen
+        run: pnpm build
+
+      - name: GitHub Pages vorbereiten
+        uses: actions/configure-pages@v5
+
+      - name: Website-Paket hochladen
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: out
+
+      - name: Website veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
