@@ -1,5 +1,6 @@
 import { content, services } from "@/app/config";
 import { Reveal } from "./reveal";
+import { ArrowIcon } from "./arrow-icon";
 export function Services() {
   const s = content.servicesSection;
   return (
@@ -18,7 +19,7 @@ export function Services() {
           {services.map((item, i) => (
             <Reveal key={item.number} delay={i % 3 * .08}>
               <article className="service-card">
-                <div className="service-card__top"><span>{item.number}</span><i aria-hidden="true">↗</i></div>
+                <div className="service-card__top"><span>{item.number}</span><i><ArrowIcon/></i></div>
                 <div className="service-card__mark" aria-hidden="true"><b /><b /><b /></div>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
