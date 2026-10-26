@@ -145,13 +145,5 @@ content:
         label: Datenschutz
         type: object
         fields:
-          - { name: intro, label: Einleitung, type: text }
           - { name: controller, label: Verantwortliche Stelle, type: text }
-          - { name: hosting, label: Hosting und Server-Logfiles, type: text }
-          - { name: contactText, label: Kontaktaufnahme – allgemeiner Text, type: text }
-          - { name: contactDetails, label: Kontaktaufnahme – rechtliche Angaben, type: text }
-          - { name: cookiesText, label: Cookies und externe Dienste – aktueller Stand, type: text }
-          - { name: cookiesDetails, label: Cookies und externe Dienste – Ergänzungen, type: text }
-          - { name: rights, label: Rechte betroffener Personen, type: text }
-          - { name: updated, label: Stand und Aktualität, type: text }
 
