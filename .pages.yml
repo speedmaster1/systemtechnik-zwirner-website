@@ -132,15 +132,11 @@ content:
         fields:
           - { name: companyName, label: Vollständiger Firmenname, type: string }
           - { name: ownerName, label: Vorname und Nachname, type: string }
-          - { name: street, label: Straße und Hausnummer, type: string }
           - { name: city, label: PLZ und Ort, type: string }
           - { name: country, label: Land, type: string }
           - { name: phone, label: Telefonnummer, type: string }
           - { name: email, label: E-Mail-Adresse, type: string }
           - { name: vatId, label: Umsatzsteuer-ID (falls vorhanden), type: string }
-          - { name: additionalInfo, label: Weitere rechtliche Angaben, type: text }
-          - { name: contentResponsible, label: Verantwortlich für den Inhalt, type: string }
-          - { name: responsibleAddress, label: Anschrift der verantwortlichen Person, type: string }
       - name: privacy
         label: Datenschutz
         type: object
