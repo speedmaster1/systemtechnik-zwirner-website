@@ -169,3 +169,12 @@ h2{font-size:clamp(40px,4.7vw,70px)}
 @media(max-width:900px),(pointer:coarse){
   .reveal{opacity:1!important;transform:none!important}
 }
+
+/* Einheitliche, feine Vektorpfeile und ein ruhigeres Premium-Grau. */
+.button{background:#d8dcde}
+.button:hover{background:#e5e8e9}
+.arrow-icon{display:block;width:16px;height:16px;flex:0 0 16px;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:square;stroke-linejoin:miter}
+.text-link .arrow-icon{color:var(--accent);width:15px;height:15px}
+.service-card__top .arrow-icon{width:18px;height:18px;stroke-width:1.15}
+.footer__bottom a{display:inline-flex;align-items:center;gap:9px}
+.footer__bottom .arrow-icon{width:14px;height:14px}
