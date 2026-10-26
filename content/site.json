@@ -20,5 +20,30 @@
   ],
   "about": { "eyebrow": "ÜBER UNS", "titleLine1": "Nicht nur installieren.", "titleLine2": "Verstehen. Vernetzen.", "titleLine3": "Optimieren.", "lead": "Als Industriemeister und Elektroniker für Automatisierungstechnik sowie TÜV-zertifizierter Sicherheitsexperte bringe ich langjährige Erfahrung aus der industriellen Praxis mit.", "text": "Dieses Know-how bildet die Grundlage unserer Arbeit bei Systemtechnik Zwirner. Wir entwickeln individuelle Lösungen für Gebäudeautomation, Energie- und Netzwerktechnik – zuverlässig, sicher und exakt auf die Anforderungen unserer Kunden abgestimmt. Dabei stehen persönliche Beratung, hochwertige Umsetzung und nachhaltiger Mehrwert für uns an erster Stelle.", "principles": ["Persönliche Beratung", "Hochwertige Umsetzung", "Nachhaltiger Mehrwert"] },
   "contact": { "eyebrow": "KONTAKT", "titleLine1": "Sie haben ein Projekt?", "titleLine2": "Lassen Sie uns darüber sprechen.", "noteTitle": "Der erste Schritt", "noteText": "Beschreiben Sie kurz Ihr Vorhaben. Wir sprechen persönlich über Anforderungen, Möglichkeiten und den passenden nächsten Schritt.", "status": "Bereit für neue Projekte", "button": "Projekt anfragen" },
-  "footer": { "claimLine1": "Automation. Energie.", "claimLine2": "Vernetzung." }
+  "footer": { "claimLine1": "Automation. Energie.", "claimLine2": "Vernetzung." },
+  "imprint": {
+    "companyName": "[VOLLSTÄNDIGER FIRMENNAME]",
+    "ownerName": "[VORNAME / NACHNAME]",
+    "street": "[STRASSE UND HAUSNUMMER]",
+    "city": "[PLZ UND ORT]",
+    "country": "Deutschland",
+    "phone": "[TELEFONNUMMER]",
+    "email": "[E-MAIL-ADRESSE]",
+    "vatId": "[UMSATZSTEUER-ID ODER ABSCHNITT ENTFERNEN]",
+    "additionalInfo": "[GEGEBENENFALLS BERUFSRECHTLICHE, AUFSICHTS- ODER REGISTERANGABEN ERGÄNZEN]",
+    "contentResponsible": "[VORNAME / NACHNAME]",
+    "responsibleAddress": "[ANSCHRIFT WIE OBEN]"
+  },
+  "privacy": {
+    "intro": "Diese Seite bildet eine datenschutzfreundliche Grundstruktur. Sie muss vor Veröffentlichung anhand der tatsächlich eingesetzten Dienste und Prozesse vervollständigt und rechtlich geprüft werden.",
+    "controller": "[VOLLSTÄNDIGER FIRMENNAME]\n[VORNAME / NACHNAME]\n[LADUNGSFÄHIGE ANSCHRIFT]\n[E-MAIL-ADRESSE]\n[TELEFONNUMMER]",
+    "hosting": "[HOSTING-ANBIETER, SERVERSTANDORT, VERARBEITETE LOGDATEN, RECHTSGRUNDLAGE UND SPEICHERDAUER ERGÄNZEN]",
+    "contactText": "Wenn Sie mit uns Kontakt aufnehmen, werden Ihre Angaben ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.",
+    "contactDetails": "[RECHTSGRUNDLAGE, SPEICHERDAUER UND KONKRETE VERARBEITUNGSWEGE DES KONTAKTFORMULARS ERGÄNZEN]",
+    "cookiesText": "In dieser Website-Version sind keine Analyse-, Werbe- oder Trackingdienste vorgesehen. Es werden keine externen Webfonts geladen.",
+    "cookiesDetails": "[BEI SPÄTEREN ÄNDERUNGEN PRÜFEN UND DIESEN ABSCHNITT SOWIE EIN ETWAIGES EINWILLIGUNGSMANAGEMENT ANPASSEN]",
+    "rights": "[BETROFFENENRECHTE, ZUSTÄNDIGE AUFSICHTSBEHÖRDE UND KONTAKTWEGE RECHTLICH GEPRÜFT ERGÄNZEN]",
+    "updated": "Stand: [MONAT JAHR]. Diese Datenschutzerklärung ist bei Änderungen der Website oder eingesetzter Dienste zu aktualisieren."
+  }
 }
+
