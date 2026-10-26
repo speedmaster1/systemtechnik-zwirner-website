@@ -1,0 +1,5 @@
+"use client";
+import { motion, useReducedMotion } from "motion/react";
+import { Logo } from "./logo";
+import { content } from "@/app/config";
+export function Hero(){const reduced=useReducedMotion();const h=content.hero;return <section id="start" className="hero"><div className="hero__grid"/><div className="hero__glow"/><div className="circuit" aria-hidden="true"><i/><i/><i/><i/></div><motion.div className="hero__brand" initial={reduced?false:{opacity:0,y:-14}} animate={{opacity:1,y:0}} transition={{duration:1,delay:.15,ease:[.2,.8,.2,1]}}><Logo /></motion.div><motion.div className="hero__content" initial={reduced?false:{opacity:0,y:34}} animate={{opacity:1,y:0}} transition={{duration:1,ease:[.2,.8,.2,1]}}><p className="eyebrow"><span/> {h.eyebrow}</p><h1>{h.titleLine1}<br/><em>{h.titleLine2}</em></h1><p className="hero__lead">{h.lead}</p><div className="hero__actions"><a href="#kontakt" className="button">{h.primaryCta} <span>↗</span></a><a href="#leistungen" className="text-link">{h.secondaryCta} <span>↓</span></a></div></motion.div><div className="hero__meta"><span>{content.brand.name}</span><span>51.48° N &nbsp; 9.15° E</span></div></section>}
