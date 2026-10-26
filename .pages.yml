@@ -1,0 +1,128 @@
+media:
+  - name: images
+    label: Bilder
+    input: public/uploads
+    output: /uploads
+    categories: [image]
+    extensions: [png, jpg, jpeg, webp, avif]
+    rename: safe
+
+content:
+  - name: website
+    label: Website-Inhalte
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: brand
+        label: Firma und Kontaktdaten
+        type: object
+        fields:
+          - { name: name, label: Firmenname, type: string, required: true }
+          - name: logo
+            label: Logo
+            type: image
+            required: true
+            options: { media: images }
+          - { name: region, label: Standort, type: string, required: true }
+          - { name: email, label: E-Mail, type: string }
+          - { name: phone, label: Telefon, type: string }
+      - name: navigation
+        label: Navigation
+        type: object
+        fields:
+          - { name: start, label: Start, type: string }
+          - { name: services, label: Leistungen, type: string }
+          - { name: projects, label: Projekte, type: string }
+          - { name: about, label: Über uns, type: string }
+          - { name: contact, label: Kontakt, type: string }
+          - { name: cta, label: Hauptbutton, type: string }
+      - name: hero
+        label: Startbereich
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine Überschrift, type: string }
+          - { name: titleLine1, label: Headline Zeile 1, type: string }
+          - { name: titleLine2, label: Headline Zeile 2, type: string }
+          - { name: lead, label: Einleitung, type: text }
+          - { name: primaryCta, label: Primärer Button, type: string }
+          - { name: secondaryCta, label: Sekundärer Button, type: string }
+      - name: servicesSection
+        label: Leistungsbereich
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine Überschrift, type: string }
+          - { name: titleLine1, label: Headline Zeile 1, type: string }
+          - { name: titleLine2, label: Headline Zeile 2, type: string }
+          - { name: intro, label: Einleitung, type: text }
+          - { name: detailsLabel, label: Beschriftung der Leistungsdetails, type: string }
+      - name: services
+        label: Leistungen
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{number} – {title}" }
+        fields:
+          - { name: number, label: Nummer, type: string }
+          - { name: title, label: Titel, type: string, required: true }
+          - { name: text, label: Beschreibung, type: text, required: true }
+          - { name: details, label: Einzelne Leistungen, type: string, list: true }
+      - name: competence
+        label: Kompetenzbereich
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine Überschrift, type: string }
+          - { name: statement, label: Aussage, type: text }
+          - { name: highlight, label: Hervorgehobener Text, type: string }
+          - { name: wordsLine1, label: Lauftext Zeile 1, type: string }
+          - { name: wordsLine2, label: Lauftext Zeile 2, type: string }
+      - name: projectsSection
+        label: Projektbereich
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine Überschrift, type: string }
+          - { name: titleLine1, label: Headline Zeile 1, type: string }
+          - { name: titleLine2, label: Headline Zeile 2, type: string }
+          - { name: intro, label: Einleitung, type: text }
+      - name: projects
+        label: Projekte
+        type: object
+        list:
+          collapsible: { collapsed: true, summary: "{number} – {title}" }
+        fields:
+          - { name: number, label: Nummer, type: string }
+          - { name: title, label: Titel, type: string, required: true }
+          - { name: text, label: Beschreibung, type: text, required: true }
+          - { name: tags, label: Schlagwörter, type: string, list: true }
+          - name: image
+            label: Projektbild
+            type: image
+            options: { media: images }
+          - { name: imageAlt, label: Alternativtext des Bildes, type: string }
+      - name: about
+        label: Über uns
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine Überschrift, type: string }
+          - { name: titleLine1, label: Headline Zeile 1, type: string }
+          - { name: titleLine2, label: Headline Zeile 2, type: string }
+          - { name: titleLine3, label: Headline Zeile 3, type: string }
+          - { name: lead, label: Einleitung, type: text }
+          - { name: text, label: Haupttext, type: text }
+          - { name: principles, label: Prinzipien, type: string, list: true }
+      - name: contact
+        label: Kontaktbereich
+        type: object
+        fields:
+          - { name: eyebrow, label: Kleine Überschrift, type: string }
+          - { name: titleLine1, label: Headline Zeile 1, type: string }
+          - { name: titleLine2, label: Headline Zeile 2, type: string }
+          - { name: noteTitle, label: Infobox Titel, type: string }
+          - { name: noteText, label: Infobox Text, type: text }
+          - { name: status, label: Status, type: string }
+          - { name: button, label: Button, type: string }
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+          - { name: claimLine1, label: Claim Zeile 1, type: string }
+          - { name: claimLine2, label: Claim Zeile 2, type: string }
