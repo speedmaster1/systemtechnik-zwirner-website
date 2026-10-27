@@ -74,7 +74,7 @@ h2{font-size:clamp(40px,4.7vw,70px)}
   .nav__inner>a:first-child{flex-basis:164px;min-width:0}
   .menu-button{width:48px;height:48px;flex-basis:48px}
   .mobile-menu{padding:34px 20px 28px;overflow-y:auto}
-  .mobile-menu a{font-size:clamp(32px,10.5vw,44px);padding:12px 0}
+  .mobile-menu a{font-size:clamp(27px,8vw,34px);padding:11px 0;letter-spacing:-.035em}
   .mobile-menu p{position:static;margin:28px 0 0}
 
   .hero{min-height:760px;padding:250px 16px 52px}
